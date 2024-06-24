@@ -1,6 +1,6 @@
 import 'package:musci_player_backend/db/app_db.dart';
 
-sealed class Songs {
+abstract interface class Songs {
   void querySongsDB();
 }
 
