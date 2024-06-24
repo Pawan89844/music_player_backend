@@ -14,6 +14,7 @@ class AppRouter {
   static Router api() {
     return _router
       ..get(AppRoute.app, _api.rootHandler)
-      ..get(AppRoute.home, _api.echoHandler);
+      ..get(AppRoute.home, _api.echoHandler)
+      ..get(AppRoute.getSongs, _api.getSongs);
   }
 }
